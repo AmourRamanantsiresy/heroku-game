@@ -1,0 +1,81 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gameBg{
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-100%);
+    font-size: 80px;
+    transition: text-shadow 2s;
+    cursor: pointer;
+}
+
+.gameBg:hover{
+    text-shadow: 2px 2px 5px white,
+                2px 2px 10px blue,
+                -2px -2px 10px red;    
+}
+
+.tableauB{
+    transition: top 1s 1s;
+}
+
+.gameBg:hover + .tableauB{
+    top: -10%;
+}
+
+.tableauB:hover{
+    top:-10%;
+}
+
+/* -------------------tableau de bord------------------- */
+.tableauB{
+    color: white;
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top:-100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    box-shadow: 2px 2px 7px red,
+    -2px -2px 7px red;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tableauB h1{
+    margin-top: 20%;
+}
+/* -------------------tableau de bord------------------- */
+/* -------------------Sokoban------------------- */
+
+h2{
+    margin-top: 40%;
+    transition: text-shadow 2s;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+h2:hover{
+    text-shadow: 2px 2px 5px white,
+                2px 2px 10px blue,
+                -2px -2px 10px red;    
+}
+
+/* -------------------Sokoban------------------- */
+
+@keyframes anime1 {
+    0%{scale: 1;}
+    100%{scale: 2;}
+}
+@keyframes anime2 {
+    0%{visibility: hidden;opacity: 0;}
+    100%{visibility: visible;opacity: 1;}
+}
